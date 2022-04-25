@@ -34,10 +34,4 @@ export class DatepickerComponent {
     this.EjercicioService.buscarApi(fechaDesde, fechaHasta);
   }
 
-  
-
-
-
- 
-
 }
