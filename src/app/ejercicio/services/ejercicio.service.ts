@@ -9,10 +9,6 @@ import  snk from './../../_files/snk.json';
 })
 export class EjercicioService {
 
-  snkList:{id:number, sensorElementId:any, magnitude:number, variation:number, timestamp:string}[]=snk;
-  timestampList: string[] = [];
-  dataList: number[] = [];
-  temperaturaUser: number[] = [];
   resultados: any[] = [];
 
   constructor(private _http: HttpClient) { 
