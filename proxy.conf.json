@@ -1,0 +1,7 @@
+{
+    "/api":{
+        "target":"http://data-env.eba-pwemrg4q.us-east-1.elasticbeanstalk.com",
+        "secure":false,
+        "logLevel": "debug"
+    }
+}

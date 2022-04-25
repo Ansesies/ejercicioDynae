@@ -1,0 +1,31 @@
+
+<div class=" grafico col m-3">
+
+<div class="flex">
+    <div class="flex-item">
+      <div style="display: block;">
+
+        <!-- grafico de ng2-charts -->
+      <canvas baseChart width="1000" height="600"
+                  [data]="lineChartData"
+                  [options]="lineChartOptions"
+                  [type]="lineChartType"
+                  (chartHover)="chartHovered($event)"
+                  (chartClick)="chartClicked($event)"></canvas>
+      </div>
+    </div>
+    
+    
+  </div>
+  <div>
+      <!-- input seleccionador de temperatura-->
+      <input 
+      class="temperatura form-control me-2" 
+      type="search" placeholder="Seleccionar °C" 
+      (keyup.enter)="buscar(temperatura.value)"
+      #temperatura
+      >
+
+  </div>
+
+</div>

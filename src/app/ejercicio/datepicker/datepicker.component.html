@@ -1,0 +1,41 @@
+<div>
+    <div>
+      <!--  seleccionador rango de fechas -->
+        <mat-form-field appearance="fill">
+            <mat-label>Enter a date range</mat-label>
+            <mat-date-range-input [rangePicker]="picker">
+              <input matStartDate placeholder="Start date" #dateStart>
+              <input matEndDate placeholder="End date" #dateEnd>
+            </mat-date-range-input>
+            <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-date-range-picker #picker></mat-date-range-picker>
+           
+        </mat-form-field>
+          
+    </div>
+
+    <!-- boton de buscar fechas -->
+    <div class="button">
+        <div class="example-button-container">
+            <button 
+                    mat-fab color="warn" 
+                    aria-label="Example icon button with a home icon"
+                    (click)="consumirApi(dateStart.value, dateEnd.value)"
+
+                    
+               
+                    
+                    >
+              <mat-icon>search</mat-icon>
+            </button>
+          </div>
+    </div>
+    
+
+</div>
+
+<!--<div>
+  <p *ngFor="let item of snkList"> {{item.id}} | {{item.magnitude}} | {{item.times}}</p>
+</div> -->
+  
